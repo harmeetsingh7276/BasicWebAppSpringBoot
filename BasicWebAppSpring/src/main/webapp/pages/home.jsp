@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-Home Page Hello World
+Home Page Hello ${name}
 </body>
 </html>
