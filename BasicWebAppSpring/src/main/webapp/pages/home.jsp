@@ -7,6 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-Home Page Hello ${name}
+Home Page
+<hr>
+ Hello ${obj.aname},${obj.aid},${obj.lang}
 </body>
 </html>

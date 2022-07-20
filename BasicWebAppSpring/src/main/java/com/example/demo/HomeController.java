@@ -12,14 +12,14 @@ import org.springframework.web.servlet.ModelAndView;
 public class HomeController {
 
 	@RequestMapping("home")
-	public ModelAndView home(@RequestParam("name")String myName) {
+	public ModelAndView home(Alien alien) {
 		// remember this name parameter should be the same as in the request parameter
 		// if you want to change the parameter name in method from the parameter you
 		// pass in the request then use RequestParam("paramName") in the method before
 		// declaring name variable and vice versa
 		
 		ModelAndView mv=new ModelAndView();
-		mv.addObject("name", myName);
+		mv.addObject("obj", alien);
 		mv.setViewName("home");
 		return mv;
 	}
